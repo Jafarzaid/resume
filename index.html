@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jafar Sadique KK | Operations & Supply Chain Leader</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-deep: #0f111a;
+            --bg-card: #181b26;
+            --bg-card-hover: #1e2230;
+            --border-color: #2a2e3d;
+            --accent-primary: #d4af37; /* Gold */
+            --accent-glow: rgba(212, 175, 55, 0.15);
+            --text-main: #f5f5f5;
+            --text-muted: #8b8d98;
+            --gradient-gold: linear-gradient(135deg, #d4af37 0%, #f0e68c 100%);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background-color: var(--bg-deep);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Ambient Background Elements */
+        .bg-glow-1 {
+            position: fixed;
+            top: -10%;
+            right: -5%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, var(--accent-glow) 0%, rgba(0, 0, 0, 0) 70%);
+            z-index: -1;
+            filter: blur(60px);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 5rem 2rem;
+        }
+
+        /* Header / Hero */
+        header {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            margin-bottom: 6rem;
+            padding-bottom: 4rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero-left .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            padding: 0.4rem 1rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            color: var(--accent-primary);
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+        }
+
+        .contact-item {
+            color: var(--text-muted);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            transition: color 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .contact-item i { color: var(--accent-primary); width: 16px; }
+        .contact-item:hover { color: var(--text-main); }
+
+        /* Hero Right - Key Stats */
+        .hero-right {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            border-color: var(--accent-primary);
+            transform: translateY(-5px);
+        }
+
+        .stat-value {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: var(--accent-primary);
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* Executive Summary */
+        .exec-summary {
+            background: linear-gradient(180deg, var(--bg-card) 0%, transparent 100%);
+            border-left: 3px solid var(--accent-primary);
+            padding: 2rem 2.5rem;
+            margin-bottom: 5rem;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .exec-summary h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-main);
+        }
+
+        .exec-summary p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        /* Section Titles */
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+
+        /* Timeline Experience */
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+            border-left: 1px solid var(--border-color);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2.5rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2.4rem;
+            top: 1.5rem;
+            width: 12px;
+            height: 12px;
+            background: var(--bg-deep);
+            border: 2px solid var(--accent-primary);
+            border-radius: 50%;
+            z-index: 2;
+        }
+
+        .job-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .job-card:hover {
+            background: var(--bg-card-hover);
+            border-color: rgba(212, 175, 55, 0.3);
+        }
+
+        .job-header {
+            padding: 1.75rem 2rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .job-title-group h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            color: var(--text-main);
+            margin-bottom: 0.25rem;
+        }
+
+        .job-title-group p {
+            color: var(--accent-primary);
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .toggle-icon {
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--border-color);
+            border-radius: 50%;
+            color: var(--text-muted);
+            transition: all 0.3s ease;
+            background: transparent;
+        }
+
+        .job-card.active .toggle-icon {
+            background: var(--accent-primary);
+            color: #000;
+            border-color: var(--accent-primary);
+            transform: rotate(180deg);
+        }
+
+        .job-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out;
+        }
+
+        .job-content-inner {
+            padding: 0 2rem 2rem 2rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: 0;
+            padding-top: 2rem;
+        }
+
+        .project-block {
+            margin-bottom: 2rem;
+        }
+        .project-block:last-child { margin-bottom: 0; }
+
+        .project-block h5 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: var(--text-main);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .project-block h5 i { color: var(--accent-primary); font-size: 0.8rem; }
+
+        .project-block p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+
+        .metrics-row {
+            display: flex;
+            gap: 1rem;
+            margin: 1.25rem 0;
+            flex-wrap: wrap;
+        }
+
+        .metric-pill {
+            background: rgba(212, 175, 55, 0.05);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+        }
+        .metric-pill strong { color: var(--accent-primary); }
+
+        ul.bullet-list {
+            list-style: none;
+            margin-top: 1rem;
+        }
+        ul.bullet-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+        ul.bullet-list li::before {
+            content: '—';
+            position: absolute;
+            left: 0;
+            color: var(--accent-primary);
+        }
+
+        /* Grid Layouts for Bottom Sections */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 3rem;
+            margin-bottom: 4rem;
+        }
+
+        .info-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 2rem;
+            border-radius: 8px;
+            height: 100%;
+        }
+
+        .info-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-main);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.75rem;
+        }
+
+        .info-item {
+            margin-bottom: 1.25rem;
+        }
+        .info-item:last-child { margin-bottom: 0; }
+
+        .info-item .meta {
+            font-size: 0.8rem;
+            color: var(--accent-primary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            display: block;
+        }
+
+        .info-item strong {
+            display: block;
+            color: var(--text-main);
+            font-size: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .info-item span {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            header { grid-template-columns: 1fr; gap: 2rem; }
+            .hero-right { grid-template-columns: repeat(4, 1fr); }
+            h1 { font-size: 3rem; }
+        }
+        @media (max-width: 600px) {
+            .container { padding: 3rem 1rem; }
+            .hero-right { grid-template-columns: 1fr 1fr; }
+            h1 { font-size: 2.2rem; }
+            .grid-2 { grid-template-columns: 1fr; }
+            .exec-summary { padding: 1.5rem; }
+            .job-header { padding: 1.25rem; }
+            .job-content-inner { padding: 1.25rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="bg-glow-1"></div>
+
+<div class="container">
+    
+    <!-- Hero Header -->
+    <header>
+        <div class="hero-left">
+            <div class="badge"><i class="fas fa-briefcase"></i> Operations Leadership | MENA Region</div>
+            <h1>Jafar Sadique KK</h1>
+            <div class="subtitle">Operations & Supply Chain Leader</div>
+            
+            <div class="contact-info">
+                <a href="tel:+919447668606" class="contact-item"><i class="fas fa-phone-alt"></i> +91 9447668606</a>
+                <a href="mailto:jaferpallarkk@gmail.com" class="contact-item"><i class="fas fa-envelope"></i> jaferpallarkk@gmail.com</a>
+                <a href="https://www.linkedin.com/in/jaferzaid" target="_blank" class="contact-item"><i class="fab fa-linkedin"></i> linkedin.com/in/jaferzaid</a>
+            </div>
+        </div>
+        <div class="hero-right">
+            <div class="stat-card">
+                <span class="stat-value">5</span>
+                <span class="stat-label">MENA Regions Managed</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value">1,000+</span>
+                <span class="stat-label">Staff Impacted</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value">2,000+</span>
+                <span class="stat-label">Hours Saved Annually</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value">Top 1%</span>
+                <span class="stat-label">Amazon Performer</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Executive Summary -->
+    <div class="exec-summary">
+        <h3>Building resilient operations through people and technology.</h3>
+        <p>I’ve always believed that the best operations run so smoothly that they go unnoticed. Throughout my career—most notably at Amazon, where I consistently earned the highest annual performance ratings and multiple innovation awards—I’ve focused on giving time back to my teams. By designing AI-assisted automations and applying Lean Kaizen methodologies, I’ve helped save thousands of manual hours annually. Currently pursuing an MBA in Supply Chain Management, I am passionate about driving operational excellence, mentoring high-performing teams, and building tech-enabled supply chains.</p>
+    </div>
+
+    <!-- Experience Timeline -->
+    <section>
+        <div class="section-title">Career Journey & Impact</div>
+        
+        <div class="timeline">
+            <!-- Job 1: Transportation Specialist -->
+            <div class="timeline-item">
+                <div class="job-card" onclick="toggleJob(this)">
+                    <div class="job-header">
+                        <div class="job-title-group">
+                            <h4>Transportation Specialist</h4>
+                            <p>UAE, KSA, EGY, TR, ZA | 2024 - Present</p>
+                        </div>
+                        <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="job-content">
+                        <div class="job-content-inner">
+                            <div class="project-block">
+                                <h5><i class="fas fa-users"></i> Team Leadership & SME</h5>
+                                <p>Serving as the Subject Matter Expert (SME) for regional operations, I took ownership of upskilling my team. I trained 20+ team members on end-to-end logistics processes and provide continuous mentorship to ensure they excel in their roles and maintain high operational standards.</p>
+                                <div class="metrics-row">
+                                    <div class="metric-pill"><strong>20+</strong> Team Members Trained</div>
+                                    <div class="metric-pill"><strong>SME</strong> Role</div>
+                                </div>
+                            </div>
+                            <div class="project-block">
+                                <h5><i class="fas fa-robot"></i> Empowering Teams with AI Automations</h5>
+                                <p>I saw my team spending countless hours manually tracking transit delays, so I built an AI-assisted browser automation tool to do it for us. This empowered 40+ users across 3 regions to focus on problem-solving rather than data entry.</p>
+                                <div class="metrics-row">
+                                    <div class="metric-pill"><strong>71%</strong> Faster Response</div>
+                                    <div class="metric-pill"><strong>130+</strong> Hours Saved/Yr</div>
+                                    <div class="metric-pill"><strong>1,564</strong> Incidents Handled/Yr</div>
+                                </div>
+                            </div>
+                            <div class="project-block">
+                                <h5><i class="fas fa-chart-line"></i> Scaling Dark Store & Delay Identification</h5>
+                                <p>Managing a multi-country logistics network means dealing with immense data
