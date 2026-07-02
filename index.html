@@ -16,7 +16,6 @@
             --accent-glow: rgba(212, 175, 55, 0.15);
             --text-main: #f5f5f5;
             --text-muted: #8b8d98;
-            --gradient-gold: linear-gradient(135deg, #d4af37 0%, #f0e68c 100%);
         }
 
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -29,7 +28,6 @@
             overflow-x: hidden;
         }
 
-        /* Ambient Background Elements */
         .bg-glow-1 {
             position: fixed;
             top: -10%;
@@ -47,7 +45,6 @@
             padding: 5rem 2rem;
         }
 
-        /* Header / Hero */
         header {
             display: grid;
             grid-template-columns: 1.5fr 1fr;
@@ -109,7 +106,6 @@
         .contact-item i { color: var(--accent-primary); width: 16px; }
         .contact-item:hover { color: var(--text-main); }
 
-        /* Hero Right - Key Stats */
         .hero-right {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -145,7 +141,6 @@
             letter-spacing: 0.5px;
         }
 
-        /* Executive Summary */
         .exec-summary {
             background: linear-gradient(180deg, var(--bg-card) 0%, transparent 100%);
             border-left: 3px solid var(--accent-primary);
@@ -167,7 +162,6 @@
             line-height: 1.8;
         }
 
-        /* Section Titles */
         .section-title {
             font-family: 'Playfair Display', serif;
             font-size: 2rem;
@@ -185,7 +179,6 @@
             background: var(--border-color);
         }
 
-        /* Timeline Experience */
         .timeline {
             position: relative;
             padding-left: 2rem;
@@ -334,7 +327,6 @@
             color: var(--accent-primary);
         }
 
-        /* Grid Layouts for Bottom Sections */
         .grid-2 {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -396,7 +388,6 @@
             font-size: 0.85rem;
         }
 
-        /* Responsive */
         @media (max-width: 900px) {
             header { grid-template-columns: 1fr; gap: 2rem; }
             .hero-right { grid-template-columns: repeat(4, 1fr); }
@@ -419,7 +410,6 @@
 
 <div class="container">
     
-    <!-- Hero Header -->
     <header>
         <div class="hero-left">
             <div class="badge"><i class="fas fa-briefcase"></i> Operations Leadership | MENA Region</div>
@@ -452,18 +442,16 @@
         </div>
     </header>
 
-    <!-- Executive Summary -->
     <div class="exec-summary">
         <h3>Building resilient operations through people and technology.</h3>
         <p>I’ve always believed that the best operations run so smoothly that they go unnoticed. Throughout my career—most notably at Amazon, where I consistently earned the highest annual performance ratings and multiple innovation awards—I’ve focused on giving time back to my teams. By designing AI-assisted automations and applying Lean Kaizen methodologies, I’ve helped save thousands of manual hours annually. Currently pursuing an MBA in Supply Chain Management, I am passionate about driving operational excellence, mentoring high-performing teams, and building tech-enabled supply chains.</p>
     </div>
 
-    <!-- Experience Timeline -->
     <section>
         <div class="section-title">Career Journey & Impact</div>
         
         <div class="timeline">
-            <!-- Job 1: Transportation Specialist -->
+            <!-- Job 1 -->
             <div class="timeline-item">
                 <div class="job-card" onclick="toggleJob(this)">
                     <div class="job-header">
@@ -494,4 +482,249 @@
                             </div>
                             <div class="project-block">
                                 <h5><i class="fas fa-chart-line"></i> Scaling Dark Store & Delay Identification</h5>
-                                <p>Managing a multi-country logistics network means dealing with immense data
+                                <p>Managing a multi-country logistics network means dealing with immense data complexity. I engineered VBA macros to automatically fetch live trip data, identifying unaddressed delays and automating D-1 Dark Store fleet reporting across UAE, KSA, and Egypt.</p>
+                                <div class="metrics-row">
+                                    <div class="metric-pill"><strong>92%</strong> Processing Time Cut</div>
+                                    <div class="metric-pill"><strong>420</strong> Delay ID Hours Saved</div>
+                                    <div class="metric-pill"><strong>547</strong> Dark Store Hrs Saved</div>
+                                </div>
+                            </div>
+                            <div class="project-block">
+                                <h5><i class="fas fa-bell"></i> NOC Time Tracker & Report Automations</h5>
+                                <p>Noticing a systemic gap in 24x7 workforce compliance, I built a browser extension delivering real-time break-end alerts to 1,000+ NOC staff. I also automated multiple EOD reports (AU ARVO, SGPO, JNT, Easy Ship).</p>
+                                <ul class="bullet-list">
+                                    <li><strong>NOC Extension:</strong> Eliminated break adherence violations across 1,000+ operations staff, ensuring stress-free continuous coverage.</li>
+                                    <li><strong>Report Automations:</strong> Reduced daily processing times from 15-30 mins to 2-3 mins, giving back 300+ aggregate hours annually to the team.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Job 2 -->
+            <div class="timeline-item">
+                <div class="job-card" onclick="toggleJob(this)">
+                    <div class="job-header">
+                        <div class="job-title-group">
+                            <h4>Translation Specialist & Manual Tester (Alexa Skills)</h4>
+                            <p>Amazon India Private Limited | Dec 2020 - Oct 2023</p>
+                        </div>
+                        <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="job-content">
+                        <div class="job-content-inner">
+                            <div class="project-block">
+                                <h5><i class="fas fa-database"></i> Strategic Reporting & Lean Optimization</h5>
+                                <p>I steered WBR, MPR, and QBR data preparation for leadership. To eliminate manual roadblocks, I authored complex SQL queries in Hubble to resolve timezone discrepancies, standardizing data extraction for SJO and BLR teams. I also applied Lean methodologies (ALFA Yellow Belt) to partner with BI on automation.</p>
+                                <div class="metrics-row">
+                                    <div class="metric-pill"><strong>1,600</strong> Hrs/Year Saved (WBR Idea)</div>
+                                    <div class="metric-pill"><strong>2</strong> Teams Standardized (SJO/BLR)</div>
+                                </div>
+                                <ul class="bullet-list">
+                                    <li>Collaborated with the BI team to identify manual tasks and launch the automated ASP WBR dashboard.</li>
+                                    <li>Created comprehensive Visio workflow diagrams for AES case management, utilized as a foundational training reference.</li>
+                                </ul>
+                            </div>
+                            <div class="project-block">
+                                <h5><i class="fas fa-search"></i> Quality Assurance & UAT Leadership</h5>
+                                <p>I established ownership of Arabic locale QA, bypassing process gaps. I spearheaded multiple audit phases and UATs to ensure zero-defect developer communications, raising the bar for the entire team.</p>
+                                <div class="metrics-row">
+                                    <div class="metric-pill"><strong>116</strong> UAT Defects Flagged</div>
+                                    <div class="metric-pill"><strong>82</strong> Skills Re-Audited</div>
+                                    <div class="metric-pill"><strong>21</strong> Sev1 & Sev2 Issues Caught</div>
+                                </div>
+                                <ul class="bullet-list">
+                                    <li>Proposed implementing managed auditing using the unmanaged ITTILLA template, expanding QI coverage without waiting for dev resources.</li>
+                                    <li>Led a 4-phase UAT for Arabic RDA templates, collaborating with US-based tech teams to fix language, formatting, and hyperlink inconsistencies.</li>
+                                </ul>
+                            </div>
+                            <div class="project-block">
+                                <h5><i class="fas fa-users"></i> Team Leadership & Mentorship</h5>
+                                <p>Acting as SME and RCA POC, I stepped up to manage REBC queues with minimal training. I mentored new hires and associates to scale process capabilities, ensuring no one was left behind.</p>
+                                <div class="metrics-row">
+                                    <div class="metric-pill"><strong>~1,500</strong> REBC Skills Closed</div>
+                                    <div class="metric-pill"><strong>2</strong> Associates Trained (CPDR)</div>
+                                </div>
+                                <ul class="bullet-list">
+                                    <li>Buddy-up and KT sessions for newly hired auditors and Support Engineers (SE), including daily progress reporting to leadership.</li>
+                                    <li>Completed ALFA Lean Yellow Belt (L2) & White Belt (L1), applying DMAIC and VSM to team processes.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Job 3 -->
+            <div class="timeline-item">
+                <div class="job-card" onclick="toggleJob(this)">
+                    <div class="job-header">
+                        <div class="job-title-group">
+                            <h4>Translator & Content Specialist</h4>
+                            <p>Pentacodes IT Solutions, UAE | May 2020 - Oct 2020</p>
+                        </div>
+                        <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="job-content">
+                        <div class="job-content-inner">
+                            <ul class="bullet-list">
+                                <li>Translated social media ad content between Arabic and English, ensuring cultural relevance and messaging tone for regional campaigns.</li>
+                                <li>Collaborated with marketing and creative teams for campaign alignment.</li>
+                                <li>Reviewed and proofread content for accuracy, consistency, and adapting to changing project requirements under tight deadlines.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Job 4 -->
+            <div class="timeline-item">
+                <div class="job-card" onclick="toggleJob(this)">
+                    <div class="job-header">
+                        <div class="job-title-group">
+                            <h4>Exam Assistant</h4>
+                            <p>Coordination of Islamic Colleges (CIC) | Jun 2018 - Jun 2019</p>
+                        </div>
+                        <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
+                    </div>
+                    <div class="job-content">
+                        <div class="job-content-inner">
+                            <ul class="bullet-list">
+                                <li>Administered exam preparations and coordinated the moderation of exam papers by external examiners, upholding assessment integrity.</li>
+                                <li>Provided administrative support for module registration, assessment systems, and Course Committee meetings.</li>
+                                <li>Supported the Timetable Administrator in preparing exam schedules and academic calendars.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications & Awards -->
+    <section style="margin-top: 5rem;">
+        <div class="section-title">Certifications & Honors</div>
+        <div class="grid-2">
+            <div class="info-card">
+                <h3><i class="fas fa-certificate" style="color: var(--accent-primary); margin-right: 0.5rem;"></i> Certifications</h3>
+                <div class="info-item">
+                    <span class="meta">Amazon Web Services (AWS)</span>
+                    <strong>Fundamentals of Generative AI</strong>
+                    <span>Dec 2025</span>
+                </div>
+                <div class="info-item">
+                    <span class="meta">Amazon ALFA (L2) - Jul 2023</span>
+                    <strong>Lean Kaizen Process Champion (Yellow Belt)</strong>
+                    <span>Deep dive into Lean/Six Sigma, VSM, and FMEA.</span>
+                </div>
+                <div class="info-item">
+                    <span class="meta">Amazon ALFA (L1)</span>
+                    <strong>Lean Foundations (White Belt)</strong>
+                    <span>Continuous Improvement & DMAIC Methodology.</span>
+                </div>
+            </div>
+            
+            <div class="info-card">
+                <h3><i class="fas fa-trophy" style="color: var(--accent-primary); margin-right: 0.5rem;"></i> Honors & Awards</h3>
+                <div class="info-item">
+                    <span class="meta">Sep 2023</span>
+                    <strong>Innovator Award</strong>
+                    <span>Alexa Developer Experience and Customer Trust (ADECT)</span>
+                </div>
+                <div class="info-item">
+                    <span class="meta">Jun 2023</span>
+                    <strong>Extra Mile Award</strong>
+                    <span>Alexa Developer Experience and Customer Trust (ADECT)</span>
+                </div>
+                <div class="info-item">
+                    <span class="meta">Multiple Years</span>
+                    <strong>Spot Award & Weekly Star Performer</strong>
+                    <span>Amazon - For driving team success and process excellence.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Skills -->
+    <section style="margin-top: 4rem;">
+        <div class="grid-2">
+            <div class="info-card">
+                <h3><i class="fas fa-graduation-cap" style="color: var(--accent-primary); margin-right: 0.5rem;"></i> Education & Diplomas</h3>
+                <div class="info-item">
+                    <strong>MBA - Operations & Supply Chain</strong>
+                    <span>Jamia Hamdard University, New Delhi (Pursuing)</span>
+                </div>
+                <div class="info-item">
+                    <strong>MA - English Language & Literature</strong>
+                    <span>Annamalai University (2024)</span>
+                </div>
+                <div class="info-item">
+                    <strong>MA - Arabic Language & Literature</strong>
+                    <span>English & Foreign Languages University (2019)</span>
+                </div>
+                <div class="info-item">
+                    <strong>BA - English Language & Literature</strong>
+                    <span>University of Calicut (2016)</span>
+                </div>
+                <div class="info-item">
+                    <strong>Diploma in Functional Arabic</strong>
+                    <span>Ministry of Human Resource Development, Govt. of India (2016)</span>
+                </div>
+                <div class="info-item">
+                    <strong>Diploma in Functional Urdu</strong>
+                    <span>Ministry of Human Resource Development, Govt. of India (2012)</span>
+                </div>
+            </div>
+            
+            <div class="info-card">
+                <h3><i class="fas fa-cogs" style="color: var(--accent-primary); margin-right: 0.5rem;"></i> Skills & Languages</h3>
+                <div class="info-item">
+                    <strong>Languages</strong>
+                    <span>English, Arabic, Urdu, Malayalam</span>
+                </div>
+                <div class="info-item">
+                    <strong>Managerial & Operations</strong>
+                    <span>Cross-Border Logistics, Team Leadership, Strategic Reporting (WBR/MBR/QBR), Kaizen, RCA.</span>
+                </div>
+                <div class="info-item">
+                    <strong>Technical & Automation</strong>
+                    <span>AI-Assisted Tool Development, VBA Macros, SQL (Hubble), BI Dashboards, Browser Extensions, Visio.</span>
+                </div>
+                <div class="info-item">
+                    <strong>Process Excellence</strong>
+                    <span>Lean Yellow Belt (VSM, FMEA, DMAIC), Generative AI, Quality Assurance, SME, REBC.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Jafar Sadique KK. Crafted with precision for strategic operations leadership.</p>
+    </footer>
+</div>
+
+<script>
+    function toggleJob(element) {
+        const content = element.querySelector('.job-content');
+        const isActive = element.classList.contains('active');
+
+        // Close all other open items
+        document.querySelectorAll('.job-card').forEach(card => {
+            card.classList.remove('active');
+            card.querySelector('.job-content').style.maxHeight = null;
+            // Reset icon rotation
+            card.querySelector('.toggle-icon i').style.transform = 'rotate(0deg)';
+        });
+
+        // Open the clicked item
+        if (!isActive) {
+            element.classList.add('active');
+            content.style.maxHeight = content.scrollHeight + "px";
+            element.querySelector('.toggle-icon i').style.transform = 'rotate(180deg)';
+        }
+    }
+</script>
+
+</body>
+</html>
