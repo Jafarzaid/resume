@@ -4,123 +4,163 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jafar Sadique KK · Transportation Specialist</title>
-<meta name="description" content="Jafar Sadique KK, Transportation Specialist at Amazon. Track-and-trace operations across UAE, Saudi Arabia, Egypt, Türkiye and South Africa.">
+<meta name="description" content="Transportation Specialist at Amazon. Linehaul track-and-trace across UAE, Saudi Arabia, Egypt, Türkiye and South Africa, and AI-assisted automations that save the team about 1,100 hours a year.">
+<meta property="og:title" content="Jafar Sadique KK · Transportation Specialist at Amazon">
+<meta property="og:description" content="Linehaul track-and-trace across five countries. AI-assisted automations that save about 1,100 hours a year. Founders Award 2025.">
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://jafarzaid.github.io/resume/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23f6f1e7'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-family='Georgia,serif' font-size='36' font-weight='600' fill='%23c4521f'%3EJ%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&family=Hanken+Grotesk:wght@400;500;600&family=Noto+Naskh+Arabic:wght@500&display=swap" rel="stylesheet">
 <style>
   :root {
     --paper: oklch(97.2% 0.012 85);
+    --paper-2: oklch(94.6% 0.017 82);
     --ink: oklch(23% 0.02 60);
-    --soft: oklch(48% 0.02 60);
+    --soft: oklch(47% 0.02 60);
     --rule: oklch(86% 0.02 80);
-    --signal: oklch(60% 0.16 42);
+    --signal: oklch(58% 0.16 42);
     --serif: 'Newsreader', Georgia, serif;
     --sans: 'Hanken Grotesk', 'Segoe UI', sans-serif;
-    --side: 11rem;
+    --side: 10.5rem;
+    --gap: clamp(1.5rem, 4vw, 3.5rem);
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  html { background: var(--paper); }
-  body { font-optical-sizing: auto; font-family: var(--sans); color: var(--ink); font-size: clamp(15px, 0.35vw + 14px, 17px); line-height: 1.6; font-feature-settings: "tnum" 0; }
-  main { max-width: 64rem; margin: 0 auto; padding: clamp(2.5rem, 6vw, 6rem) clamp(1.25rem, 4vw, 3rem) 5rem; }
-  a { color: inherit; text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 3px; transition: text-decoration-color .2s; }
-  a:hover { text-decoration-color: var(--signal); }
+  html { background: var(--paper); scroll-behavior: smooth; }
+  body { font-family: var(--sans); color: var(--ink); font-size: clamp(15px, 0.3vw + 14px, 17px); line-height: 1.62; font-optical-sizing: auto; -webkit-font-smoothing: antialiased; }
+  ::selection { background: oklch(85% 0.08 50); }
+  main { max-width: 66rem; margin: 0 auto; padding: clamp(2.5rem, 6vw, 5.5rem) clamp(1.25rem, 4vw, 3rem) 4rem; }
+  a { color: inherit; text-decoration: none; background: linear-gradient(var(--signal), var(--signal)) 0 100% / 0 1.5px no-repeat, linear-gradient(var(--rule), var(--rule)) 0 100% / 100% 1px no-repeat; transition: background-size .35s cubic-bezier(.16,1,.3,1); padding-bottom: 1px; }
+  a:hover, a:focus-visible { background-size: 100% 1.5px, 100% 1px; }
+  a:focus-visible { outline: 2px solid var(--signal); outline-offset: 3px; border-radius: 2px; }
 
   /* Masthead */
-  .masthead { display: grid; grid-template-columns: 1fr auto; gap: 1rem 3rem; align-items: end; }
-  h1 { font-family: var(--serif); font-weight: 500; font-size: clamp(3rem, 8.5vw, 6rem); line-height: .95; letter-spacing: -0.025em; }
-  h1 em { font-weight: 500; }
-  h1 em { color: var(--signal); }
-  .role { margin-top: 1.1rem; font-size: 1.05rem; max-width: 30rem; color: var(--soft); }
+  .kicker { font-size: .78rem; letter-spacing: .16em; text-transform: uppercase; color: var(--soft); margin-bottom: 1.4rem; display: flex; gap: .75rem; align-items: center; }
+  .kicker::before { content: ""; width: 1.75rem; height: 1.5px; background: var(--signal); }
+  .masthead { display: grid; grid-template-columns: 1fr auto; gap: 1.5rem var(--gap); align-items: end; }
+  h1 { font-family: var(--serif); font-weight: 500; font-size: clamp(3rem, 8.5vw, 6.2rem); line-height: .94; letter-spacing: -0.03em; }
+  h1 em { color: var(--signal); font-weight: 500; }
+  .ar { text-align: left; font-family: 'Noto Naskh Arabic', serif; font-size: 1.15rem; color: var(--soft); margin-top: .9rem; }
+  .role { margin-top: 1rem; font-size: 1.08rem; max-width: 31rem; color: var(--soft); }
   .role b { color: var(--ink); font-weight: 600; }
-  .contact { list-style: none; text-align: right; font-size: .92rem; line-height: 1.9; }
-  .contact .pdf { font-weight: 600; text-decoration-color: var(--signal); }
+  .contact { list-style: none; text-align: right; font-size: .93rem; line-height: 2.05; }
+  .btn { display: inline-block; margin-top: .5rem; padding: .55rem 1.05rem; border: 1.5px solid var(--ink); border-radius: 999px; font-weight: 600; font-size: .88rem; background: none; transition: background-color .25s, color .25s; }
+  .btn:hover, .btn:focus-visible { background: var(--ink); color: var(--paper); }
 
-  /* Route line */
-  .route { margin: clamp(2.5rem, 5vw, 4rem) 0 0; position: relative; display: flex; justify-content: space-between; padding-top: 1.4rem; }
-  .route::before { content: ""; position: absolute; top: .45rem; left: .35rem; right: .35rem; height: 0; border-top: 1.5px dashed var(--rule); }
-  .route::after { content: ""; position: absolute; top: .45rem; left: .35rem; height: 0; border-top: 1.5px solid var(--signal); width: 0; animation: travel 1.6s cubic-bezier(.16,1,.3,1) .3s forwards; }
-  .stop { position: relative; font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; color: var(--soft); text-align: center; width: 0; display: flex; justify-content: center; white-space: nowrap; }
+  /* Route */
+  .route { margin-top: clamp(2.5rem, 5vw, 3.75rem); position: relative; display: flex; justify-content: space-between; padding-top: 1.4rem; }
+  .route::before { content: ""; position: absolute; top: .45rem; left: .35rem; right: .35rem; border-top: 1.5px dashed var(--rule); }
+  .route::after { content: ""; position: absolute; top: .45rem; left: .35rem; border-top: 1.5px solid var(--signal); width: calc(100% - .7rem); transform-origin: left; transform: scaleX(0); animation: travel 1.8s cubic-bezier(.16,1,.3,1) .35s forwards; }
+  .stop { position: relative; font-size: .74rem; letter-spacing: .12em; text-transform: uppercase; color: var(--soft); width: 0; display: flex; justify-content: center; white-space: nowrap; }
   .stop::before { content: ""; position: absolute; top: -1.3rem; width: .7rem; height: .7rem; border-radius: 50%; background: var(--paper); border: 1.5px solid var(--ink); z-index: 1; }
-  .stop:first-child { justify-content: flex-start; } .stop:first-child::before { left: 0; }
+  .stop:first-child { justify-content: flex-start; } .stop:first-child::before { left: 0; background: var(--signal); border-color: var(--signal); }
   .stop:last-child { justify-content: flex-end; } .stop:last-child::before { right: 0; }
-  @keyframes travel { to { width: calc(100% - .7rem); } }
+  @keyframes travel { to { transform: scaleX(1); } }
 
   /* Figures */
-  .figures { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: clamp(3rem, 6vw, 4.5rem); }
+  .figures { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--gap); margin-top: clamp(2.75rem, 5vw, 4rem); }
   .fig { border-top: 1px solid var(--ink); padding-top: .8rem; }
-  .fig strong { display: block; font-family: var(--serif); font-weight: 500; letter-spacing: -0.02em; font-size: clamp(2.2rem, 4.5vw, 3.2rem); line-height: 1; margin-bottom: .45rem; }
+  .fig strong { display: block; font-family: var(--serif); font-weight: 500; letter-spacing: -0.025em; font-size: clamp(2.3rem, 4.6vw, 3.4rem); line-height: 1; margin-bottom: .5rem; }
   .fig span { font-size: .92rem; color: var(--soft); }
 
   /* Sections */
-  section { display: grid; grid-template-columns: var(--side) 1fr; gap: 0 3rem; margin-top: clamp(3.5rem, 7vw, 5.5rem); }
-  h2 { font-size: .75rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 600; color: var(--soft); padding-top: .55rem; }
-  h2 span { color: var(--signal); margin-right: .5rem; }
-  .lede { font-family: var(--serif); font-weight: 400; letter-spacing: -0.005em; font-size: clamp(1.45rem, 2.2vw, 1.85rem); line-height: 1.3; }
-  .lede + p { margin-top: 1.25rem; }
-  .body p + p { margin-top: .9rem; }
-  .body p { max-width: 38rem; }
+  section { display: grid; grid-template-columns: var(--side) 1fr; gap: 0 var(--gap); margin-top: clamp(4rem, 8vw, 6rem); }
+  .label { position: sticky; top: 1.75rem; align-self: start; }
+  h2 { font-size: .74rem; letter-spacing: .15em; text-transform: uppercase; font-weight: 600; color: var(--soft); padding-top: .5rem; }
+  h2 span { color: var(--signal); margin-right: .5rem; font-variant-numeric: tabular-nums; }
+  .lede { font-family: var(--serif); font-size: clamp(1.5rem, 2.4vw, 2rem); line-height: 1.28; letter-spacing: -0.012em; max-width: 40rem; }
+  .lede + p { margin-top: 1.4rem; }
+  .body p { max-width: 39rem; }
+  .body p + p { margin-top: .95rem; }
+
+  /* Selected work */
+  .cases { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--gap); }
+  .case { border-top: 1px solid var(--ink); padding-top: 1rem; display: flex; flex-direction: column; }
+  .case .n { font-family: var(--serif); font-style: italic; color: var(--signal); font-size: 1.05rem; }
+  .case h3 { font-family: var(--serif); font-weight: 500; font-size: 1.4rem; line-height: 1.15; letter-spacing: -0.01em; margin: .3rem 0 .9rem; }
+  .case dl { font-size: .94rem; }
+  .case dt { font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; color: var(--soft); font-weight: 600; margin-top: .75rem; }
+  .case dd { margin-top: .15rem; }
+  .result { margin-top: auto; padding-top: 1.1rem; }
+  .result b { display: block; font-family: var(--serif); font-weight: 500; font-size: 2.1rem; line-height: 1; letter-spacing: -0.02em; }
+  .result span { font-size: .88rem; color: var(--soft); }
+  .note { margin-top: 1.75rem; font-size: .9rem; color: var(--soft); max-width: 40rem; }
 
   /* Jobs */
-  .job { display: grid; grid-template-columns: var(--side) 1fr; gap: 0 3rem; padding: 1.75rem 0; border-top: 1px solid var(--rule); }
-  .exp { display: block; }
-  .exp > h2 { margin-bottom: 1.5rem; padding-bottom: .9rem; border-bottom: 1px solid var(--ink); }
-  .job:first-child { border-top: 0; padding-top: 0; }
-  .when { font-size: .88rem; color: var(--soft); padding-top: .35rem; font-variant-numeric: tabular-nums; }
-  .job h3 { font-family: var(--serif); font-weight: 500; letter-spacing: -0.01em; font-size: 1.5rem; line-height: 1.15; }
-  .org { color: var(--soft); font-size: .92rem; margin: .2rem 0 .9rem; }
+  .job { display: grid; grid-template-columns: 8.5rem 1fr; gap: 0 2rem; padding: 1.6rem 0; border-top: 1px solid var(--rule); }
+  .job:first-child { border-top: 0; padding-top: .2rem; }
+  .when { font-size: .88rem; color: var(--soft); padding-top: .4rem; font-variant-numeric: tabular-nums; }
+  .job h3 { font-family: var(--serif); font-weight: 500; letter-spacing: -0.01em; font-size: 1.45rem; line-height: 1.2; }
+  .org { color: var(--soft); font-size: .92rem; margin: .2rem 0 .85rem; }
   .job ul { list-style: none; max-width: 40rem; }
-  .job li { position: relative; padding-left: 1.2rem; margin-bottom: .5rem; }
-  .job li::before { content: ""; position: absolute; left: 0; top: .72em; width: .45rem; height: 1.5px; background: var(--signal); }
-  .job.minor h3 { font-size: 1.3rem; }
+  .job li { position: relative; padding-left: 1.2rem; margin-bottom: .45rem; }
+  .job li::before { content: ""; position: absolute; left: 0; top: .74em; width: .45rem; height: 1.5px; background: var(--signal); }
+  .job.minor h3 { font-size: 1.2rem; }
 
   /* Lists */
   .rows { list-style: none; }
   .rows li { display: grid; grid-template-columns: 1fr auto; gap: 1rem; padding: .7rem 0; border-top: 1px solid var(--rule); }
-  .rows li:first-child { border-top: 0; padding-top: .35rem; }
+  .rows li:first-child { border-top: 0; padding-top: .3rem; }
   .rows small { display: block; color: var(--soft); font-size: .88rem; }
   .rows .yr { color: var(--soft); font-size: .88rem; font-variant-numeric: tabular-nums; padding-top: .1rem; }
-  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 0 3rem; }
-  .split h4 { font-size: .8rem; font-weight: 600; margin-bottom: .2rem; }
-  .skills dl { display: grid; grid-template-columns: 7rem 1fr; gap: .6rem 1.5rem; }
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 0 var(--gap); }
+  .split h4 { font-size: .82rem; font-weight: 600; margin-bottom: .2rem; }
+  .skills dl { display: grid; grid-template-columns: 7rem 1fr; gap: .7rem 1.5rem; }
   .skills dt { font-weight: 600; font-size: .92rem; padding-top: .05rem; }
 
-  footer { margin-top: 5rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; font-size: .82rem; color: var(--soft); }
+  footer { margin-top: 5rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; flex-wrap: wrap; gap: .5rem; font-size: .84rem; color: var(--soft); }
 
-  /* Load reveal */
-  .reveal { opacity: 0; transform: translateY(10px); animation: rise .9s cubic-bezier(.16,1,.3,1) forwards; }
-  .d1 { animation-delay: .05s } .d2 { animation-delay: .15s } .d3 { animation-delay: .3s } .d4 { animation-delay: .45s }
+  /* Motion */
+  .reveal { opacity: 0; transform: translateY(12px); animation: rise 1s cubic-bezier(.16,1,.3,1) forwards; }
+  .d1 { animation-delay: .05s } .d2 { animation-delay: .15s } .d3 { animation-delay: .28s } .d4 { animation-delay: .42s }
   @keyframes rise { to { opacity: 1; transform: none; } }
-  @media (prefers-reduced-motion: reduce) { .reveal, .route::after { animation: none; opacity: 1; transform: none; } .route::after { width: calc(100% - .7rem); } }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .reveal { animation: none; opacity: 1; transform: none; } .route::after { animation: none; transform: none; } }
 
-  /* Mobile */
+  /* Tablet */
+  @media (max-width: 960px) {
+    .cases { grid-template-columns: 1fr; gap: 2rem; }
+    .case { display: grid; grid-template-columns: 1fr 9rem; gap: 0 1.5rem; }
+    .case > div:first-child { grid-column: 1; }
+    .result { grid-column: 2; grid-row: 1; padding-top: 2rem; margin-top: 0; }
+  }
+  /* Phone */
   @media (max-width: 720px) {
     .masthead { grid-template-columns: 1fr; }
-    .contact { text-align: left; }
+    .contact { text-align: left; line-height: 2.3; }
     .figures { grid-template-columns: 1fr; gap: 1.25rem; }
-    section, .job { grid-template-columns: 1fr; }
-    h2 { margin-bottom: 1rem; }
-    .split { grid-template-columns: 1fr; gap: 1.5rem; }
+    section { grid-template-columns: 1fr; }
+    .label { position: static; margin-bottom: 1.1rem; }
+    .job { grid-template-columns: 1fr; }
+    .split { grid-template-columns: 1fr; gap: 1.75rem; }
     .stop { font-size: 0; letter-spacing: .1em; }
     .stop::after { content: attr(data-s); font-size: .7rem; }
-    .contact { line-height: 2.3; }
-    .skills dl { grid-template-columns: 1fr; gap: .1rem; } .skills dd { margin-bottom: .6rem; }
+    .case { grid-template-columns: 1fr; }
+    .result { grid-column: 1; grid-row: auto; padding-top: 1rem; }
+    .skills dl { grid-template-columns: 1fr; gap: .1rem; } .skills dd { margin-bottom: .7rem; }
   }
 
-  /* Print: one clean document */
+  /* Print / PDF */
   @media print {
-    @page { margin: 14mm 14mm; }
+    @page { size: A4; margin: 10mm 13mm; }
     html, body { background: #fff; }
-    body { font-size: 10pt; line-height: 1.45; }
+    body { font-size: 9pt; line-height: 1.36; }
     main { padding: 0; max-width: none; }
     .reveal { opacity: 1; transform: none; animation: none; }
-    .route, .pdf, footer { display: none; }
-    h1 { font-size: 34pt; }
-    .figures { margin-top: 1.5rem; } .fig strong { font-size: 20pt; }
-    section { margin-top: 1.6rem; --side: 7.5rem; gap: 0 1.5rem; }
-    .job { padding: .8rem 0; break-inside: avoid; grid-template-columns: 7.5rem 1fr; gap: 0 1.5rem; }
-    .job h3 { font-size: 14pt; }
-    a { text-decoration: none; }
+    .route, .btn, .kicker, footer, .note { display: none; }
+    a { background: none; }
+    h1 { font-size: 26pt; } .ar { font-size: 11pt; margin-top: 4pt; }
+    .role { margin-top: 6pt; }
+    .figures { margin-top: 10pt; gap: 18pt; } .fig strong { font-size: 18pt; margin-bottom: 2pt; } .fig span { font-size: 8.5pt; }
+    section { margin-top: 11pt; --side: 6.5rem; gap: 0 14pt; }
+    .label { position: static; }
+    .lede { font-size: 13pt; } .lede + p { margin-top: 6pt; }
+    .cases { grid-template-columns: repeat(3, 1fr); gap: 14pt; }
+    .case { display: flex; } .case h3 { font-size: 12pt; margin-bottom: 4pt; } .case dl { font-size: 8.8pt; } .case dt { margin-top: 4pt; }
+    .result { grid-column: auto; grid-row: auto; padding-top: 6pt; } .result b { font-size: 15pt; }
+    .job { padding: 4pt 0; break-inside: avoid; grid-template-columns: 5.5rem 1fr; gap: 0 12pt; }
+    .job h3 { font-size: 12pt; } .org { margin-bottom: 4pt; } .job li { margin-bottom: 2pt; }
+    .rows li { padding: 2pt 0; } .case, .rows li { break-inside: avoid; }
   }
 </style>
 </head>
@@ -128,15 +168,18 @@
 <main>
 
 <header>
+  <p class="kicker reveal d1">Resume · Updated October 2026</p>
   <div class="masthead">
     <div class="reveal d1">
       <h1>Jafar<br>Sadique <em>KK</em></h1>
-      <p class="role"><b>Transportation Specialist at Amazon.</b> I track shipments across five countries and use AI tools to take manual work off my team.</p>
+      <p class="ar" lang="ar" dir="rtl">جعفر صادق</p>
+      <p class="role"><b>Transportation Specialist at Amazon.</b> I track linehaul shipments across five countries and use AI tools to take manual work off my team.</p>
     </div>
     <ul class="contact reveal d2">
       <li><a href="mailto:jaferpallarkk@gmail.com">jaferpallarkk@gmail.com</a></li>
       <li><a href="https://www.linkedin.com/in/jaferzaid" target="_blank" rel="noopener">linkedin.com/in/jaferzaid</a></li>
-      <li><a class="pdf" href="Jafar_Sadique_Resume.pdf" download>Download PDF ↓</a></li>
+      <li>Chennai, India</li>
+      <li><a class="btn" href="Jafar_Sadique_Resume.pdf" download>Download PDF</a></li>
     </ul>
   </div>
 
@@ -146,49 +189,88 @@
 
   <div class="figures reveal d4">
     <div class="fig"><strong>1,100+</strong><span>hours a year saved by automations I built with AI</span></div>
-    <div class="fig"><strong>1,000+</strong><span>people use my break-alert extension daily</span></div>
+    <div class="fig"><strong>1,000+</strong><span>NOC staff use my break-alert extension</span></div>
     <div class="fig"><strong>2025</strong><span>Founders Award, Amazon</span></div>
   </div>
 </header>
 
 <section>
-  <h2><span>01</span>About</h2>
+  <div class="label"><h2><span>01</span>About</h2></div>
   <div class="body">
     <p class="lede">Most of my job is catching delays early, getting the right people on them, and changing the plan before customers notice.</p>
-    <p>I work on track-and-trace for Amazon shipments across the UAE, Saudi Arabia, Egypt, Türkiye and South Africa, in a 24/7 operation. A lot of that work was manual, so I used AI tools to automate it: Excel macros, a browser extension and small workflow scripts. They now save about 1,100 hours a year for around 40 people.</p>
-    <p>Before this I spent three years on the Alexa team doing Arabic translation and QA. I'm currently doing an MBA in Operations &amp; Supply Chain at Jamia Hamdard.</p>
+    <p>I run track-and-trace for Amazon linehaul across the UAE, Saudi Arabia, Egypt, Türkiye and South Africa, in a 24/7 NOC. A lot of that work was manual. I'm not a developer: I find the bottleneck, work out the fix, and use AI tools to build it. Those tools are now used by 40+ people and save about 1,100 hours a year.</p>
+    <p>Before this I spent nearly four years on the Alexa team in Arabic translation, QA and process improvement, where I earned my Lean Yellow Belt. I'm currently doing an MBA in Operations &amp; Supply Chain at Jamia Hamdard.</p>
   </div>
 </section>
 
-<section class="exp">
-  <h2><span>02</span>Experience</h2>
+<section>
+  <div class="label"><h2><span>02</span>Selected work</h2></div>
+  <div>
+    <div class="cases">
+      <article class="case">
+        <div>
+          <span class="n">i.</span>
+          <h3>Faster incident handling</h3>
+          <dl>
+            <dt>Problem</dt><dd>Handling network incidents meant a lot of repetitive data entry before anyone could work the actual problem.</dd>
+            <dt>What I did</dt><dd>Mapped the steps and automated the repetitive parts with AI tools, for 40+ people in 3 countries.</dd>
+          </dl>
+        </div>
+        <p class="result"><b>71%</b><span>faster response, across 1,564 incidents a year</span></p>
+      </article>
+      <article class="case">
+        <div>
+          <span class="n">ii.</span>
+          <h3>Delay detection and fleet reports</h3>
+          <dl>
+            <dt>Problem</dt><dd>Spotting unaddressed delays meant checking live trip data by hand, and the next-day dark store fleet report was built manually for three countries.</dd>
+            <dt>What I did</dt><dd>Built Excel macros with AI help that pull the trip data, flag delays and produce the report for UAE, KSA and Egypt.</dd>
+          </dl>
+        </div>
+        <p class="result"><b>92%</b><span>less processing time</span></p>
+      </article>
+      <article class="case">
+        <div>
+          <span class="n">iii.</span>
+          <h3>Break-alert extension</h3>
+          <dl>
+            <dt>Problem</dt><dd>In a 24/7 NOC, break adherence relied on people watching the clock, and missed returns left gaps in coverage.</dd>
+            <dt>What I did</dt><dd>Created a browser extension with AI tools that alerts staff in real time when their break ends.</dd>
+          </dl>
+        </div>
+        <p class="result"><b>1,000+</b><span>staff using it; break violations down to zero</span></p>
+      </article>
+    </div>
+    <p class="note">I design the process and the fix; AI tools write the code. Every tool here is in daily use by my team.</p>
+  </div>
+</section>
+
+<section>
+  <div class="label"><h2><span>03</span>Experience</h2></div>
   <div>
     <article class="job">
       <p class="when">2024 to now</p>
       <div>
         <h3>Transportation Specialist</h3>
-        <p class="org">Amazon · UAE, KSA, Egypt, Türkiye, South Africa</p>
+        <p class="org">Amazon · UAE, KSA, Egypt, Türkiye, South Africa · Remote</p>
         <ul>
-          <li>Monitor shipments across 5 countries in a 24/7 operation; flag disruptions and coordinate the response with partner teams.</li>
-          <li>Prepare the daily performance report used in business reviews.</li>
+          <li>Monitor linehaul shipments in a 24/7 NOC; flag docking, departure and arrival delays and coordinate the response with stakeholders.</li>
+          <li>Prepare daily, weekly and monthly performance reports used in business reviews.</li>
           <li>Regional subject-matter expert; trained 20+ new team members.</li>
-          <li>Spotted manual bottlenecks and automated them with AI tools; now used by 40+ people in 3 countries. They save about 1,100 hours a year and cut incident response time by 71%.</li>
-          <li>Automated delay detection and the next-day dark store fleet report for UAE, KSA and Egypt using AI-built Excel macros. Processing time dropped 92%.</li>
-          <li>Created a break-alert browser extension with AI tools, now used by 1,000+ NOC staff. Break adherence violations went to zero.</li>
-          <li>Automated several end-of-day reports, cutting each from 15 to 30 minutes down to 2 to 3.</li>
+          <li>Automated with AI tools the work described under Selected work, plus several end-of-day reports (from 15 to 30 minutes down to 2 to 3 each).</li>
         </ul>
       </div>
     </article>
 
     <article class="job">
-      <p class="when">2020 to 2023</p>
+      <p class="when">2020 to 2024</p>
       <div>
-        <h3>Translation Specialist &amp; QA Tester, Alexa Skills</h3>
-        <p class="org">Amazon India · Dec 2020 to Oct 2023</p>
+        <h3>Translation Associate, Alexa Skills</h3>
+        <p class="org">Amazon India · Bengaluru · Dec 2020 to Aug 2024</p>
         <ul>
-          <li>Prepared data for weekly, monthly and quarterly business reviews. Fixed timezone mismatches in the data so the San José and Bangalore teams reported the same numbers.</li>
-          <li>Proposed automating the weekly business review report; the BI team built it into a dashboard that saves about 1,600 hours a year.</li>
-          <li>Took over Arabic QA. Led a 4-round user acceptance test of the Arabic templates, fixing language, formatting and link errors before rollout. Flagged 116 defects (21 of them Sev1/Sev2) and re-audited 82 skills.</li>
+          <li>Owned Arabic QA: led a 4-round user acceptance test of the Arabic templates, fixing language, formatting and link errors before rollout. Flagged 116 defects, including 21 Sev1/Sev2, and re-audited 82 skills.</li>
+          <li>Prepared data for weekly, monthly and quarterly business reviews; fixed timezone mismatches so the San José and Bangalore teams reported the same numbers.</li>
+          <li>Proposed an automated weekly report that the BI team built into a dashboard, saving about 1,600 hours a year.</li>
           <li>Closed about 1,500 skill review cases and served as the point of contact for root-cause analysis.</li>
           <li>Onboarded new auditors and support engineers; drew the case-handling workflow diagrams later used in training.</li>
         </ul>
@@ -200,9 +282,7 @@
       <div>
         <h3>Translator &amp; Content Specialist</h3>
         <p class="org">Pentacodes IT Solutions, UAE · May to Oct 2020</p>
-        <ul>
-          <li>Translated social media ad copy between Arabic and English, adapting tone for regional campaigns, and proofread campaign content on tight deadlines.</li>
-        </ul>
+        <ul><li>Translated social media ad copy between Arabic and English, adapting tone for regional campaigns, and proofread campaign content on tight deadlines.</li></ul>
       </div>
     </article>
 
@@ -210,17 +290,15 @@
       <p class="when">2018 to 2019</p>
       <div>
         <h3>Exam Assistant</h3>
-        <p class="org">Coordination of Islamic Colleges (CIC)</p>
-        <ul>
-          <li>Ran exam preparation, coordinated external moderation of papers and helped build exam timetables and the academic calendar.</li>
-        </ul>
+        <p class="org">Coordination of Islamic Colleges (CIC), Kerala</p>
+        <ul><li>Ran exam preparation, coordinated external moderation of papers and helped build exam timetables and the academic calendar.</li></ul>
       </div>
     </article>
   </div>
 </section>
 
 <section>
-  <h2><span>03</span>Recognition</h2>
+  <div class="label"><h2><span>04</span>Recognition</h2></div>
   <div class="split">
     <div>
       <h4>Awards</h4>
@@ -243,26 +321,27 @@
 </section>
 
 <section>
-  <h2><span>04</span>Education</h2>
+  <div class="label"><h2><span>05</span>Education</h2></div>
   <ul class="rows">
     <li><span>MBA, Operations &amp; Supply Chain<small>Jamia Hamdard University, New Delhi</small></span><span class="yr">In progress</span></li>
     <li><span>MA, English Language &amp; Literature<small>Annamalai University</small></span><span class="yr">2024</span></li>
-    <li><span>MA, Arabic Language &amp; Literature<small>English &amp; Foreign Languages University</small></span><span class="yr">2019</span></li>
+    <li><span>MA, Arabic Language &amp; Literature<small>English &amp; Foreign Languages University</small></span><span class="yr">2021</span></li>
     <li><span>BA, English Language &amp; Literature<small>University of Calicut</small></span><span class="yr">2016</span></li>
     <li><span>Diplomas in Functional Arabic and Urdu<small>Ministry of HRD, Govt. of India</small></span><span class="yr">2012, 2016</span></li>
   </ul>
 </section>
 
 <section class="skills">
-  <h2><span>05</span>Skills</h2>
+  <div class="label"><h2><span>06</span>Skills</h2></div>
   <dl>
-    <dt>Operations</dt><dd>Track and trace, disruption management, stakeholder communication, business reporting, root-cause analysis, Lean (DMAIC, VSM, FMEA)</dd>
-    <dt>Tools</dt><dd>AI-assisted automation, Generative AI tools, Excel, BI dashboards, Visio</dd>
-    <dt>Languages</dt><dd>English, Arabic, Urdu, Malayalam</dd>
+    <dt>Operations</dt><dd>Linehaul track and trace, disruption management, stakeholder communication, performance reporting, root-cause analysis</dd>
+    <dt>Improvement</dt><dd>Lean (DMAIC, value stream mapping, FMEA, Kaizen), AI-assisted automation, process mapping</dd>
+    <dt>Tools</dt><dd>Generative AI tools, Excel, BI dashboards, Visio</dd>
+    <dt>Languages</dt><dd>English, Arabic, Urdu, Malayalam (native)</dd>
   </dl>
 </section>
 
-<footer><span>Jafar Sadique KK</span><span>Updated October 2026</span></footer>
+<footer><span>Jafar Sadique KK</span><span><a href="https://www.linkedin.com/in/jaferzaid" target="_blank" rel="noopener">LinkedIn</a> · <a href="mailto:jaferpallarkk@gmail.com">Email</a></span></footer>
 
 </main>
 </body>
