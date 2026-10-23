@@ -1,771 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jafar Sadique KK | Operations & Supply Chain Leader</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        :root {
-            --bg-deep: #0f111a;
-            --bg-card: #181b26;
-            --bg-card-hover: #1e2230;
-            --border-color: #2a2e3d;
-            --accent-primary: #d4af37; /* Gold */
-            --accent-glow: rgba(212, 175, 55, 0.15);
-            --text-main: #f5f5f5;
-            --text-muted: #8b8d98;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jafar Sadique KK · Transportation Specialist</title>
+<meta name="description" content="Jafar Sadique KK, Transportation Specialist at Amazon. Track-and-trace operations across UAE, Saudi Arabia, Egypt, Türkiye and South Africa.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..600&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: oklch(97.2% 0.012 85);
+    --ink: oklch(23% 0.02 60);
+    --soft: oklch(48% 0.02 60);
+    --rule: oklch(86% 0.02 80);
+    --signal: oklch(60% 0.16 42);
+    --serif: 'Newsreader', Georgia, serif;
+    --sans: 'Hanken Grotesk', 'Segoe UI', sans-serif;
+    --side: 11rem;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { background: var(--paper); }
+  body { font-optical-sizing: auto; font-family: var(--sans); color: var(--ink); font-size: clamp(15px, 0.35vw + 14px, 17px); line-height: 1.6; font-feature-settings: "tnum" 0; }
+  main { max-width: 64rem; margin: 0 auto; padding: clamp(2.5rem, 6vw, 6rem) clamp(1.25rem, 4vw, 3rem) 5rem; }
+  a { color: inherit; text-decoration: underline; text-decoration-color: var(--rule); text-underline-offset: 3px; transition: text-decoration-color .2s; }
+  a:hover { text-decoration-color: var(--signal); }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+  /* Masthead */
+  .masthead { display: grid; grid-template-columns: 1fr auto; gap: 1rem 3rem; align-items: end; }
+  h1 { font-family: var(--serif); font-weight: 500; font-size: clamp(3rem, 8.5vw, 6rem); line-height: .95; letter-spacing: -0.025em; }
+  h1 em { font-weight: 500; }
+  h1 em { color: var(--signal); }
+  .role { margin-top: 1.1rem; font-size: 1.05rem; max-width: 30rem; color: var(--soft); }
+  .role b { color: var(--ink); font-weight: 600; }
+  .contact { list-style: none; text-align: right; font-size: .92rem; line-height: 1.9; }
+  .contact .pdf { font-weight: 600; text-decoration-color: var(--signal); }
 
-        body {
-            background-color: var(--bg-deep);
-            color: var(--text-main);
-            font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
+  /* Route line */
+  .route { margin: clamp(2.5rem, 5vw, 4rem) 0 0; position: relative; display: flex; justify-content: space-between; padding-top: 1.4rem; }
+  .route::before { content: ""; position: absolute; top: .45rem; left: .35rem; right: .35rem; height: 0; border-top: 1.5px dashed var(--rule); }
+  .route::after { content: ""; position: absolute; top: .45rem; left: .35rem; height: 0; border-top: 1.5px solid var(--signal); width: 0; animation: travel 1.6s cubic-bezier(.16,1,.3,1) .3s forwards; }
+  .stop { position: relative; font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; color: var(--soft); text-align: center; width: 0; display: flex; justify-content: center; white-space: nowrap; }
+  .stop::before { content: ""; position: absolute; top: -1.3rem; width: .7rem; height: .7rem; border-radius: 50%; background: var(--paper); border: 1.5px solid var(--ink); z-index: 1; }
+  .stop:first-child { justify-content: flex-start; } .stop:first-child::before { left: 0; }
+  .stop:last-child { justify-content: flex-end; } .stop:last-child::before { right: 0; }
+  @keyframes travel { to { width: calc(100% - .7rem); } }
 
-        .bg-glow-1 {
-            position: fixed;
-            top: -10%;
-            right: -5%;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, var(--accent-glow) 0%, rgba(0, 0, 0, 0) 70%);
-            z-index: -1;
-            filter: blur(60px);
-        }
+  /* Figures */
+  .figures { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: clamp(3rem, 6vw, 4.5rem); }
+  .fig { border-top: 1px solid var(--ink); padding-top: .8rem; }
+  .fig strong { display: block; font-family: var(--serif); font-weight: 500; letter-spacing: -0.02em; font-size: clamp(2.2rem, 4.5vw, 3.2rem); line-height: 1; margin-bottom: .45rem; }
+  .fig span { font-size: .92rem; color: var(--soft); }
 
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 5rem 2rem;
-        }
+  /* Sections */
+  section { display: grid; grid-template-columns: var(--side) 1fr; gap: 0 3rem; margin-top: clamp(3.5rem, 7vw, 5.5rem); }
+  h2 { font-size: .75rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 600; color: var(--soft); padding-top: .55rem; }
+  h2 span { color: var(--signal); margin-right: .5rem; }
+  .lede { font-family: var(--serif); font-weight: 400; letter-spacing: -0.005em; font-size: clamp(1.45rem, 2.2vw, 1.85rem); line-height: 1.3; }
+  .lede + p { margin-top: 1.25rem; }
+  .body p + p { margin-top: .9rem; }
+  .body p { max-width: 38rem; }
 
-        header {
-            display: grid;
-            grid-template-columns: 1.5fr 1fr;
-            gap: 3rem;
-            align-items: center;
-            margin-bottom: 6rem;
-            padding-bottom: 4rem;
-            border-bottom: 1px solid var(--border-color);
-        }
+  /* Jobs */
+  .job { display: grid; grid-template-columns: var(--side) 1fr; gap: 0 3rem; padding: 1.75rem 0; border-top: 1px solid var(--rule); }
+  .exp { display: block; }
+  .exp > h2 { margin-bottom: 1.5rem; padding-bottom: .9rem; border-bottom: 1px solid var(--ink); }
+  .job:first-child { border-top: 0; padding-top: 0; }
+  .when { font-size: .88rem; color: var(--soft); padding-top: .35rem; font-variant-numeric: tabular-nums; }
+  .job h3 { font-family: var(--serif); font-weight: 500; letter-spacing: -0.01em; font-size: 1.5rem; line-height: 1.15; }
+  .org { color: var(--soft); font-size: .92rem; margin: .2rem 0 .9rem; }
+  .job ul { list-style: none; max-width: 40rem; }
+  .job li { position: relative; padding-left: 1.2rem; margin-bottom: .5rem; }
+  .job li::before { content: ""; position: absolute; left: 0; top: .72em; width: .45rem; height: 1.5px; background: var(--signal); }
+  .job.minor h3 { font-size: 1.3rem; }
 
-        .hero-left .badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            background: rgba(212, 175, 55, 0.1);
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            padding: 0.4rem 1rem;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            color: var(--accent-primary);
-            font-weight: 500;
-            margin-bottom: 1.5rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
+  /* Lists */
+  .rows { list-style: none; }
+  .rows li { display: grid; grid-template-columns: 1fr auto; gap: 1rem; padding: .7rem 0; border-top: 1px solid var(--rule); }
+  .rows li:first-child { border-top: 0; padding-top: .35rem; }
+  .rows small { display: block; color: var(--soft); font-size: .88rem; }
+  .rows .yr { color: var(--soft); font-size: .88rem; font-variant-numeric: tabular-nums; padding-top: .1rem; }
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 0 3rem; }
+  .split h4 { font-size: .8rem; font-weight: 600; margin-bottom: .2rem; }
+  .skills dl { display: grid; grid-template-columns: 7rem 1fr; gap: .6rem 1.5rem; }
+  .skills dt { font-weight: 600; font-size: .92rem; padding-top: .05rem; }
 
-        h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 4rem;
-            font-weight: 700;
-            line-height: 1.1;
-            margin-bottom: 0.5rem;
-            color: var(--text-main);
-        }
+  footer { margin-top: 5rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); display: flex; justify-content: space-between; font-size: .82rem; color: var(--soft); }
 
-        .subtitle {
-            color: var(--text-muted);
-            font-size: 1.2rem;
-            font-weight: 300;
-            margin-bottom: 2rem;
-        }
+  /* Load reveal */
+  .reveal { opacity: 0; transform: translateY(10px); animation: rise .9s cubic-bezier(.16,1,.3,1) forwards; }
+  .d1 { animation-delay: .05s } .d2 { animation-delay: .15s } .d3 { animation-delay: .3s } .d4 { animation-delay: .45s }
+  @keyframes rise { to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) { .reveal, .route::after { animation: none; opacity: 1; transform: none; } .route::after { width: calc(100% - .7rem); } }
 
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            gap: 0.75rem;
-            margin-bottom: 2rem;
-        }
+  /* Mobile */
+  @media (max-width: 720px) {
+    .masthead { grid-template-columns: 1fr; }
+    .contact { text-align: left; }
+    .figures { grid-template-columns: 1fr; gap: 1.25rem; }
+    section, .job { grid-template-columns: 1fr; }
+    h2 { margin-bottom: 1rem; }
+    .split { grid-template-columns: 1fr; gap: 1.5rem; }
+    .stop { font-size: 0; letter-spacing: .1em; }
+    .stop::after { content: attr(data-s); font-size: .7rem; }
+    .contact { line-height: 2.3; }
+    .skills dl { grid-template-columns: 1fr; gap: .1rem; } .skills dd { margin-bottom: .6rem; }
+  }
 
-        .contact-item {
-            color: var(--text-muted);
-            text-decoration: none;
-            display: inline-flex;
-            align-items: center;
-            gap: 0.75rem;
-            transition: color 0.3s ease;
-            font-size: 0.95rem;
-        }
-
-        .contact-item i { color: var(--accent-primary); width: 16px; }
-        .contact-item:hover { color: var(--text-main); }
-
-        .download-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.75rem;
-            background: var(--accent-primary);
-            color: #000;
-            padding: 0.85rem 1.75rem;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.95rem;
-            transition: all 0.3s ease;
-            border: 1px solid var(--accent-primary);
-            width: fit-content;
-        }
-
-        .download-btn:hover {
-            background: transparent;
-            color: var(--accent-primary);
-            box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
-            transform: translateY(-2px);
-        }
-
-        .hero-right {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-        }
-
-        .stat-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            padding: 1.5rem;
-            border-radius: 8px;
-            text-align: center;
-            transition: all 0.3s ease;
-        }
-
-        .stat-card:hover {
-            border-color: var(--accent-primary);
-            transform: translateY(-5px);
-        }
-
-        .stat-value {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
-            color: var(--accent-primary);
-            display: block;
-            margin-bottom: 0.25rem;
-        }
-
-        .stat-label {
-            font-size: 0.75rem;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .exec-summary {
-            background: linear-gradient(180deg, var(--bg-card) 0%, transparent 100%);
-            border-left: 3px solid var(--accent-primary);
-            padding: 2rem 2.5rem;
-            margin-bottom: 5rem;
-            border-radius: 0 8px 8px 0;
-        }
-
-        .exec-summary h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: var(--text-main);
-        }
-
-        .exec-summary p {
-            color: var(--text-muted);
-            font-size: 1.05rem;
-            line-height: 1.8;
-        }
-
-        .section-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 2rem;
-            margin-bottom: 3rem;
-            color: var(--text-main);
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .section-title::after {
-            content: '';
-            flex: 1;
-            height: 1px;
-            background: var(--border-color);
-        }
-
-        .timeline {
-            position: relative;
-            padding-left: 2rem;
-            border-left: 1px solid var(--border-color);
-        }
-
-        .timeline-item {
-            position: relative;
-            margin-bottom: 2.5rem;
-        }
-
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: -2.4rem;
-            top: 1.5rem;
-            width: 12px;
-            height: 12px;
-            background: var(--bg-deep);
-            border: 2px solid var(--accent-primary);
-            border-radius: 50%;
-            z-index: 2;
-        }
-
-        .job-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            overflow: hidden;
-            transition: all 0.3s ease;
-        }
-
-        .job-card:hover {
-            background: var(--bg-card-hover);
-            border-color: rgba(212, 175, 55, 0.3);
-        }
-
-        .job-header {
-            padding: 1.75rem 2rem;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .job-title-group h4 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.3rem;
-            color: var(--text-main);
-            margin-bottom: 0.25rem;
-        }
-
-        .job-title-group p {
-            color: var(--accent-primary);
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-
-        .toggle-icon {
-            width: 36px;
-            height: 36px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid var(--border-color);
-            border-radius: 50%;
-            color: var(--text-muted);
-            transition: all 0.3s ease;
-            background: transparent;
-        }
-
-        .job-card.active .toggle-icon {
-            background: var(--accent-primary);
-            color: #000;
-            border-color: var(--accent-primary);
-            transform: rotate(180deg);
-        }
-
-        .job-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.5s ease-in-out;
-        }
-
-        .job-content-inner {
-            padding: 0 2rem 2rem 2rem;
-            border-top: 1px solid var(--border-color);
-            margin-top: 0;
-            padding-top: 2rem;
-        }
-
-        .project-block {
-            margin-bottom: 2rem;
-        }
-        .project-block:last-child { margin-bottom: 0; }
-
-        .project-block h5 {
-            font-family: 'Inter', sans-serif;
-            font-weight: 600;
-            font-size: 1.05rem;
-            color: var(--text-main);
-            margin-bottom: 0.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        .project-block h5 i { color: var(--accent-primary); font-size: 0.8rem; }
-
-        .project-block p {
-            font-size: 0.95rem;
-            color: var(--text-muted);
-            margin-bottom: 1rem;
-        }
-
-        .metrics-row {
-            display: flex;
-            gap: 1rem;
-            margin: 1.25rem 0;
-            flex-wrap: wrap;
-        }
-
-        .metric-pill {
-            background: rgba(212, 175, 55, 0.05);
-            border: 1px solid rgba(212, 175, 55, 0.2);
-            padding: 0.5rem 1rem;
-            border-radius: 6px;
-            font-size: 0.9rem;
-        }
-        .metric-pill strong { color: var(--accent-primary); }
-
-        ul.bullet-list {
-            list-style: none;
-            margin-top: 1rem;
-        }
-        ul.bullet-list li {
-            position: relative;
-            padding-left: 1.5rem;
-            margin-bottom: 0.5rem;
-            font-size: 0.95rem;
-            color: var(--text-muted);
-        }
-        ul.bullet-list li::before {
-            content: '—';
-            position: absolute;
-            left: 0;
-            color: var(--accent-primary);
-        }
-
-        .grid-2 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 2rem;
-            margin-top: 3rem;
-            margin-bottom: 4rem;
-        }
-
-        .info-card {
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            padding: 2rem;
-            border-radius: 8px;
-            height: 100%;
-        }
-
-        .info-card h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.3rem;
-            margin-bottom: 1.5rem;
-            color: var(--text-main);
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 0.75rem;
-        }
-
-        .info-item {
-            margin-bottom: 1.25rem;
-        }
-        .info-item:last-child { margin-bottom: 0; }
-
-        .info-item .meta {
-            font-size: 0.8rem;
-            color: var(--accent-primary);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            font-weight: 600;
-            margin-bottom: 0.25rem;
-            display: block;
-        }
-
-        .info-item strong {
-            display: block;
-            color: var(--text-main);
-            font-size: 1rem;
-            margin-bottom: 0.25rem;
-        }
-
-        .info-item span {
-            color: var(--text-muted);
-            font-size: 0.9rem;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 4rem;
-            padding-top: 2rem;
-            border-top: 1px solid var(--border-color);
-            color: var(--text-muted);
-            font-size: 0.85rem;
-        }
-
-        @media (max-width: 900px) {
-            header { grid-template-columns: 1fr; gap: 2rem; }
-            .hero-right { grid-template-columns: repeat(4, 1fr); }
-            h1 { font-size: 3rem; }
-        }
-        @media (max-width: 600px) {
-            .container { padding: 3rem 1rem; }
-            .hero-right { grid-template-columns: 1fr 1fr; }
-            h1 { font-size: 2.2rem; }
-            .grid-2 { grid-template-columns: 1fr; }
-            .exec-summary { padding: 1.5rem; }
-            .job-header { padding: 1.25rem; }
-            .job-content-inner { padding: 1.25rem; }
-        }
-    </style>
+  /* Print: one clean document */
+  @media print {
+    @page { margin: 14mm 14mm; }
+    html, body { background: #fff; }
+    body { font-size: 10pt; line-height: 1.45; }
+    main { padding: 0; max-width: none; }
+    .reveal { opacity: 1; transform: none; animation: none; }
+    .route, .pdf, footer { display: none; }
+    h1 { font-size: 34pt; }
+    .figures { margin-top: 1.5rem; } .fig strong { font-size: 20pt; }
+    section { margin-top: 1.6rem; --side: 7.5rem; gap: 0 1.5rem; }
+    .job { padding: .8rem 0; break-inside: avoid; grid-template-columns: 7.5rem 1fr; gap: 0 1.5rem; }
+    .job h3 { font-size: 14pt; }
+    a { text-decoration: none; }
+  }
+</style>
 </head>
 <body>
+<main>
 
-<div class="bg-glow-1"></div>
-
-<div class="container">
-    
-    <header>
-        <div class="hero-left">
-            <div class="badge"><i class="fas fa-briefcase"></i> Operations Leadership | MENA Region</div>
-            <h1>Jafar Sadique KK</h1>
-            <div class="subtitle">Operations & Supply Chain Leader</div>
-            
-            <div class="contact-info">
-                <a href="tel:+919447668606" class="contact-item"><i class="fas fa-phone-alt"></i> +91 9447668606</a>
-                <a href="mailto:jaferpallarkk@gmail.com" class="contact-item"><i class="fas fa-envelope"></i> jaferpallarkk@gmail.com</a>
-                <a href="https://www.linkedin.com/in/jaferzaid" target="_blank" class="contact-item"><i class="fab fa-linkedin"></i> linkedin.com/in/jaferzaid</a>
-            </div>
-
-            <a href="Jafar_Sadique_Resume.pdf" download class="download-btn">
-                <i class="fas fa-file-download"></i> Download Resume
-            </a>
-        </div>
-        <div class="hero-right">
-            <div class="stat-card">
-                <span class="stat-value">5</span>
-                <span class="stat-label">MENA Regions Managed</span>
-            </div>
-            <div class="stat-card">
-                <span class="stat-value">1,000+</span>
-                <span class="stat-label">Staff Impacted</span>
-            </div>
-            <div class="stat-card">
-                <span class="stat-value">1,097+</span>
-                <span class="stat-label">Hours Saved Annually</span>
-            </div>
-            <div class="stat-card">
-                <span class="stat-value">Founders</span>
-                <span class="stat-label">Award Winner</span>
-            </div>
-        </div>
-    </header>
-
-    <div class="exec-summary">
-        <h3>Keeping logistics moving across the MENA region, and giving time back to people.</h3>
-        <p>I believe the best operations run so smoothly that they go unnoticed. As a Transportation Specialist at Amazon, I oversee track-and-trace logistics across 5 MENA regions. My core focus is identifying network disruptions, communicating with stakeholders, and helping the team pivot to minimize customer impact. But early on, I noticed manual bottlenecks slowing us down. By designing AI-assisted automations and applying Lean Kaizen methodologies, I’ve helped save thousands of manual hours annually. Currently pursuing an MBA in Supply Chain Management, I am passionate about driving operational excellence, mentoring high-performing teams, and building tech-enabled supply chains.</p>
+<header>
+  <div class="masthead">
+    <div class="reveal d1">
+      <h1>Jafar<br>Sadique <em>KK</em></h1>
+      <p class="role"><b>Transportation Specialist at Amazon.</b> I track shipments across five countries and build the tools that take manual work off my team.</p>
     </div>
+    <ul class="contact reveal d2">
+      <li><a href="mailto:jaferpallarkk@gmail.com">jaferpallarkk@gmail.com</a></li>
+      <li><a href="https://www.linkedin.com/in/jaferzaid" target="_blank" rel="noopener">linkedin.com/in/jaferzaid</a></li>
+      <li><a class="pdf" href="Jafar_Sadique_Resume.pdf" download>Download PDF ↓</a></li>
+    </ul>
+  </div>
 
-    <section>
-        <div class="section-title">Career Journey & Impact</div>
-        
-        <div class="timeline">
-            <!-- Job 1 -->
-            <div class="timeline-item">
-                <div class="job-card" onclick="toggleJob(this)">
-                    <div class="job-header">
-                        <div class="job-title-group">
-                            <h4>Transportation Specialist</h4>
-                            <p>UAE, KSA, EGY, TR, ZA | 2024 - Present</p>
-                        </div>
-                        <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
-                    </div>
-                    <div class="job-content">
-                        <div class="job-content-inner">
-                            <div class="project-block">
-                                <h5><i class="fas fa-route"></i> Core Operations & Disruption Management</h5>
-                                <p>My primary responsibility is keeping the network fluid. I orchestrate track-and-trace logistics operations across 5 key MENA regions in a 24/7 environment. I proactively identify network disruptions, communicate with cross-functional stakeholders, and help the team pivot operational plans to minimize customer impact.</p>
-                                <div class="metrics-row">
-                                    <div class="metric-pill"><strong>5</strong> Countries Managed</div>
-                                    <div class="metric-pill"><strong>24/7</strong> Environment</div>
-                                </div>
-                            </div>
-                            <div class="project-block">
-                                <h5><i class="fas fa-users"></i> Reporting, SME & Team Leadership</h5>
-                                <p>I prepare and present daily performance reports to drive business reviews. Serving as the regional Subject Matter Expert (SME), I provide continuous mentorship and train team members to ensure they excel in their roles and maintain high operational standards.</p>
-                                <div class="metrics-row">
-                                    <div class="metric-pill"><strong>20+</strong> Team Members Trained</div>
-                                    <div class="metric-pill"><strong>SME</strong> Role</div>
-                                </div>
-                            </div>
-                            <div class="project-block">
-                                <h5><i class="fas fa-robot"></i> Eliminating Bottlenecks with AI Automations</h5>
-                                <p>To eliminate the manual bottlenecks identified during daily operations, I independently developed AI-assisted automations. These tools empowered 40+ users across 3 regions to focus on problem-solving rather than data entry.</p>
-                                <div class="metrics-row">
-                                    <div class="metric-pill"><strong>1,097+</strong> Hours Saved/Yr</div>
-                                    <div class="metric-pill"><strong>71%</strong> Faster Response</div>
-                                    <div class="metric-pill"><strong>1,564</strong> Incidents Handled/Yr</div>
-                                </div>
-                            </div>
-                            <div class="project-block">
-                                <h5><i class="fas fa-chart-line"></i> Scaling Dark Store & Delay Identification</h5>
-                                <p>Managing a multi-country logistics network means dealing with immense data complexity. I engineered VBA macros to automatically fetch live trip data, identifying unaddressed delays and automating D-1 Dark Store fleet reporting across UAE, KSA, and Egypt.</p>
-                                <div class="metrics-row">
-                                    <div class="metric-pill"><strong>92%</strong> Processing Time Cut</div>
-                                    <div class="metric-pill"><strong>420</strong> Delay ID Hours Saved</div>
-                                    <div class="metric-pill"><strong>547</strong> Dark Store Hrs Saved</div>
-                                </div>
-                            </div>
-                            <div class="project-block">
-                                <h5><i class="fas fa-bell"></i> NOC Time Tracker & Report Automations</h5>
-                                <p>Noticing a systemic gap in 24x7 workforce compliance, I built a browser extension delivering real-time break-end alerts to 1,000+ NOC staff. I also automated multiple EOD reports (AU ARVO, SGPO, JNT, Easy Ship).</p>
-                                <ul class="bullet-list">
-                                    <li><strong>NOC Extension:</strong> Eliminated break adherence violations across 1,000+ operations staff, ensuring stress-free continuous coverage.</li>
-                                    <li><strong>Report Automations:</strong> Reduced daily processing times from 15-30 mins to 2-3 mins.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <div class="route reveal d3" aria-label="Countries covered: UAE, Saudi Arabia, Egypt, Türkiye, South Africa">
+    <span class="stop" data-s="UAE">UAE</span><span class="stop" data-s="KSA">Saudi Arabia</span><span class="stop" data-s="EGY">Egypt</span><span class="stop" data-s="TÜR">Türkiye</span><span class="stop" data-s="ZA">South Africa</span>
+  </div>
 
-            <!-- Job 2 -->
-            <div class="timeline-item">
-                <div class="job-card" onclick="toggleJob(this)">
-                    <div class="job-header">
-                        <div class="job-title-group">
-                            <h4>Translation Specialist & Manual Tester (Alexa Skills)</h4>
-                            <p>Amazon India Private Limited | Dec 2020 - Oct 2023</p>
-                        </div>
-                        <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
-                    </div>
-                    <div class="job-content">
-                        <div class="job-content-inner">
-                            <div class="project-block">
-                                <h5><i class="fas fa-database"></i> Strategic Reporting & Lean Optimization</h5>
-                                <p>I steered WBR, MPR, and QBR data preparation for leadership. To eliminate manual roadblocks, I authored complex SQL queries in Hubble to resolve timezone discrepancies, standardizing data extraction for SJO and BLR teams. I also applied Lean methodologies (ALFA Yellow Belt) to partner with BI on automation.</p>
-                                <div class="metrics-row">
-                                    <div class="metric-pill"><strong>1,600</strong> Hrs/Year Saved (WBR Idea)</div>
-                                    <div class="metric-pill"><strong>2</strong> Teams Standardized (SJO/BLR)</div>
-                                </div>
-                                <ul class="bullet-list">
-                                    <li>Collaborated with the BI team to identify manual tasks and launch the automated ASP WBR dashboard.</li>
-                                    <li>Created comprehensive Visio workflow diagrams for AES case management, utilized as a foundational training reference.</li>
-                                </ul>
-                            </div>
-                            <div class="project-block">
-                                <h5><i class="fas fa-search"></i> Quality Assurance & UAT Leadership</h5>
-                                <p>I established ownership of Arabic locale QA, bypassing process gaps. I spearheaded multiple audit phases and UATs to ensure zero-defect developer communications, raising the bar for the entire team.</p>
-                                <div class="metrics-row">
-                                    <div class="metric-pill"><strong>116</strong> UAT Defects Flagged</div>
-                                    <div class="metric-pill"><strong>82</strong> Skills Re-Audited</div>
-                                    <div class="metric-pill"><strong>21</strong> Sev1 & Sev2 Issues Caught</div>
-                                </div>
-                                <ul class="bullet-list">
-                                    <li>Proposed implementing managed auditing using the unmanaged ITTILLA template, expanding QI coverage without waiting for dev resources.</li>
-                                    <li>Led a 4-phase UAT for Arabic RDA templates, collaborating with US-based tech teams to fix language, formatting, and hyperlink inconsistencies.</li>
-                                </ul>
-                            </div>
-                            <div class="project-block">
-                                <h5><i class="fas fa-users"></i> Team Leadership & Mentorship</h5>
-                                <p>Acting as SME and RCA POC, I stepped up to manage REBC queues with minimal training. I mentored new hires and associates to scale process capabilities, ensuring no one was left behind.</p>
-                                <div class="metrics-row">
-                                    <div class="metric-pill"><strong>~1,500</strong> REBC Skills Closed</div>
-                                    <div class="metric-pill"><strong>2</strong> Associates Trained (CPDR)</div>
-                                </div>
-                                <ul class="bullet-list">
-                                    <li>Buddy-up and KT sessions for newly hired auditors and Support Engineers (SE), including daily progress reporting to leadership.</li>
-                                    <li>Completed ALFA Lean Yellow Belt (L2) & White Belt (L1), applying DMAIC and VSM to team processes.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <div class="figures reveal d4">
+    <div class="fig"><strong>1,100+</strong><span>hours a year saved by tools I built</span></div>
+    <div class="fig"><strong>1,000+</strong><span>people use my break-alert extension daily</span></div>
+    <div class="fig"><strong>2025</strong><span>Founders Award, Amazon</span></div>
+  </div>
+</header>
 
-            <!-- Job 3 -->
-            <div class="timeline-item">
-                <div class="job-card" onclick="toggleJob(this)">
-                    <div class="job-header">
-                        <div class="job-title-group">
-                            <h4>Translator & Content Specialist</h4>
-                            <p>Pentacodes IT Solutions, UAE | May 2020 - Oct 2020</p>
-                        </div>
-                        <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
-                    </div>
-                    <div class="job-content">
-                        <div class="job-content-inner">
-                            <ul class="bullet-list">
-                                <li>Translated social media ad content between Arabic and English, ensuring cultural relevance and messaging tone for regional campaigns.</li>
-                                <li>Collaborated with marketing and creative teams for campaign alignment.</li>
-                                <li>Reviewed and proofread content for accuracy, consistency, and adapting to changing project requirements under tight deadlines.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<section>
+  <h2><span>01</span>About</h2>
+  <div class="body">
+    <p class="lede">Most of my job is catching delays early, getting the right people on them, and changing the plan before customers notice.</p>
+    <p>I work on track-and-trace for Amazon shipments across the UAE, Saudi Arabia, Egypt, Türkiye and South Africa, in a 24/7 operation. A lot of that work was manual, so I started automating it with VBA macros, a browser extension and AI-assisted scripts. They now save about 1,100 hours a year for around 40 people.</p>
+    <p>Before this I spent three years on the Alexa team doing Arabic translation and QA. I'm currently doing an MBA in Operations &amp; Supply Chain at Jamia Hamdard.</p>
+  </div>
+</section>
 
-            <!-- Job 4 -->
-            <div class="timeline-item">
-                <div class="job-card" onclick="toggleJob(this)">
-                    <div class="job-header">
-                        <div class="job-title-group">
-                            <h4>Exam Assistant</h4>
-                            <p>Coordination of Islamic Colleges (CIC) | Jun 2018 - Jun 2019</p>
-                        </div>
-                        <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
-                    </div>
-                    <div class="job-content">
-                        <div class="job-content-inner">
-                            <ul class="bullet-list">
-                                <li>Administered exam preparations and coordinated the moderation of exam papers by external examiners, upholding assessment integrity.</li>
-                                <li>Provided administrative support for module registration, assessment systems, and Course Committee meetings.</li>
-                                <li>Supported the Timetable Administrator in preparing exam schedules and academic calendars.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="exp">
+  <h2><span>02</span>Experience</h2>
+  <div>
+    <article class="job">
+      <p class="when">2024 to now</p>
+      <div>
+        <h3>Transportation Specialist</h3>
+        <p class="org">Amazon · UAE, KSA, Egypt, Türkiye, South Africa</p>
+        <ul>
+          <li>Monitor shipments across 5 countries in a 24/7 operation; flag disruptions and coordinate the response with partner teams.</li>
+          <li>Prepare the daily performance report used in business reviews.</li>
+          <li>Regional subject-matter expert; trained 20+ new team members.</li>
+          <li>Built AI-assisted automations used by 40+ people in 3 countries. They save about 1,100 hours a year and cut incident response time by 71%.</li>
+          <li>Wrote VBA macros that pull live trip data to catch unflagged delays and generate the next-day dark store fleet report for UAE, KSA and Egypt. Processing time dropped 92%.</li>
+          <li>Built a browser extension that alerts 1,000+ NOC staff when their break ends. Break adherence violations went to zero.</li>
+          <li>Automated several end-of-day reports, cutting each from 15 to 30 minutes down to 2 to 3.</li>
+        </ul>
+      </div>
+    </article>
 
-    <!-- Certifications & Awards -->
-    <section style="margin-top: 5rem;">
-        <div class="section-title">Certifications & Honors</div>
-        <div class="grid-2">
-            <div class="info-card">
-                <h3><i class="fas fa-certificate" style="color: var(--accent-primary); margin-right: 0.5rem;"></i> Certifications</h3>
-                <div class="info-item">
-                    <span class="meta">Amazon Web Services (AWS)</span>
-                    <strong>Fundamentals of Generative AI</strong>
-                    <span>Dec 2025</span>
-                </div>
-                <div class="info-item">
-                    <span class="meta">Amazon ALFA (L2) - Jul 2023</span>
-                    <strong>Lean Kaizen Process Champion (Yellow Belt)</strong>
-                    <span>Deep dive into Lean/Six Sigma, VSM, and FMEA.</span>
-                </div>
-                <div class="info-item">
-                    <span class="meta">Amazon ALFA (L1)</span>
-                    <strong>Lean Foundations (White Belt)</strong>
-                    <span>Continuous Improvement & DMAIC Methodology.</span>
-                </div>
-            </div>
-            
-            <div class="info-card">
-                <h3><i class="fas fa-trophy" style="color: var(--accent-primary); margin-right: 0.5rem;"></i> Honors & Awards</h3>
-                <div class="info-item">
-                    <span class="meta">Sep 2025</span>
-                    <strong>Founders Award Winner (ROW APEX)</strong>
-                    <span>Amazon</span>
-                </div>
-                <div class="info-item">
-                    <span class="meta">Sep 2023</span>
-                    <strong>Innovator Award</strong>
-                    <span>Alexa Developer Experience and Customer Trust (ADECT)</span>
-                </div>
-                <div class="info-item">
-                    <span class="meta">Jun 2023</span>
-                    <strong>Extra Mile Award</strong>
-                    <span>Alexa Developer Experience and Customer Trust (ADECT)</span>
-                </div>
-                <div class="info-item">
-                    <span class="meta">Multiple Years</span>
-                    <strong>Spot Award & Weekly Star Performer</strong>
-                    <span>Amazon - For driving team success and process excellence.</span>
-                </div>
-            </div>
-        </div>
-    </section>
+    <article class="job">
+      <p class="when">2020 to 2023</p>
+      <div>
+        <h3>Translation Specialist &amp; QA Tester, Alexa Skills</h3>
+        <p class="org">Amazon India · Dec 2020 to Oct 2023</p>
+        <ul>
+          <li>Prepared data for weekly, monthly and quarterly business reviews. Wrote SQL to fix timezone mismatches so the San José and Bangalore teams reported the same numbers.</li>
+          <li>Proposed automating the weekly business review report; the BI team built it into a dashboard that saves about 1,600 hours a year.</li>
+          <li>Took over Arabic QA. Ran a 4-round UAT with US engineering teams, flagged 116 defects (21 of them Sev1/Sev2) and re-audited 82 skills.</li>
+          <li>Closed about 1,500 skill review cases and served as the point of contact for root-cause analysis.</li>
+          <li>Onboarded new auditors and support engineers; drew the case-handling workflow diagrams later used in training.</li>
+        </ul>
+      </div>
+    </article>
 
-    <!-- Education & Skills -->
-    <section style="margin-top: 4rem;">
-        <div class="grid-2">
-            <div class="info-card">
-                <h3><i class="fas fa-graduation-cap" style="color: var(--accent-primary); margin-right: 0.5rem;"></i> Education & Diplomas</h3>
-                <div class="info-item">
-                    <strong>MBA - Operations & Supply Chain</strong>
-                    <span>Jamia Hamdard University, New Delhi (Pursuing)</span>
-                </div>
-                <div class="info-item">
-                    <strong>MA - English Language & Literature</strong>
-                    <span>Annamalai University (2024)</span>
-                </div>
-                <div class="info-item">
-                    <strong>MA - Arabic Language & Literature</strong>
-                    <span>English & Foreign Languages University (2019)</span>
-                </div>
-                <div class="info-item">
-                    <strong>BA - English Language & Literature</strong>
-                    <span>University of Calicut (2016)</span>
-                </div>
-                <div class="info-item">
-                    <strong>Diploma in Functional Arabic</strong>
-                    <span>Ministry of Human Resource Development, Govt. of India (2016)</span>
-                </div>
-                <div class="info-item">
-                    <strong>Diploma in Functional Urdu</strong>
-                    <span>Ministry of Human Resource Development, Govt. of India (2012)</span>
-                </div>
-            </div>
-            
-            <div class="info-card">
-                <h3><i class="fas fa-cogs" style="color: var(--accent-primary); margin-right: 0.5rem;"></i> Skills & Languages</h3>
-                <div class="info-item">
-                    <strong>Languages</strong>
-                    <span>English, Arabic, Urdu, Malayalam</span>
-                </div>
-                <div class="info-item">
-                    <strong>Managerial & Operations</strong>
-                    <span>Cross-Border Logistics, Track & Trace, Stakeholder Management, Strategic Reporting (WBR/MBR/QBR), Kaizen, RCA.</span>
-                </div>
-                <div class="info-item">
-                    <strong>Technical & Automation</strong>
-                    <span>AI-Assisted Tool Development, VBA Macros, SQL (Hubble), BI Dashboards, Browser Extensions, Visio.</span>
-                </div>
-                <div class="info-item">
-                    <strong>Process Excellence</strong>
-                    <span>Lean Yellow Belt (VSM, FMEA, DMAIC), Generative AI, Quality Assurance, SME, REBC.</span>
-                </div>
-            </div>
-        </div>
-    </section>
+    <article class="job minor">
+      <p class="when">2020</p>
+      <div>
+        <h3>Translator &amp; Content Specialist</h3>
+        <p class="org">Pentacodes IT Solutions, UAE · May to Oct 2020</p>
+        <ul>
+          <li>Translated social media ad copy between Arabic and English, adapting tone for regional campaigns, and proofread campaign content on tight deadlines.</li>
+        </ul>
+      </div>
+    </article>
 
-    <footer>
-        <p>&copy; 2024 Jafar Sadique KK. Crafted with precision for strategic operations leadership.</p>
-    </footer>
-</div>
+    <article class="job minor">
+      <p class="when">2018 to 2019</p>
+      <div>
+        <h3>Exam Assistant</h3>
+        <p class="org">Coordination of Islamic Colleges (CIC)</p>
+        <ul>
+          <li>Ran exam preparation, coordinated external moderation of papers and helped build exam timetables and the academic calendar.</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
 
-<script>
-    function toggleJob(element) {
-        const content = element.querySelector('.job-content');
-        const isActive = element.classList.contains('active');
+<section>
+  <h2><span>03</span>Recognition</h2>
+  <div class="split">
+    <div>
+      <h4>Awards</h4>
+      <ul class="rows">
+        <li><span>Founders Award<small>Amazon</small></span><span class="yr">2025</span></li>
+        <li><span>Innovator Award<small>Alexa</small></span><span class="yr">2023</span></li>
+        <li><span>Extra Mile Award<small>Alexa</small></span><span class="yr">2023</span></li>
+        <li><span>Spot Awards<small>Amazon</small></span><span class="yr">Several</span></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Certifications</h4>
+      <ul class="rows">
+        <li><span>Fundamentals of Generative AI<small>AWS</small></span><span class="yr">2025</span></li>
+        <li><span>Lean Yellow Belt<small>Amazon ALFA L2</small></span><span class="yr">2023</span></li>
+        <li><span>Lean White Belt<small>Amazon ALFA L1</small></span><span class="yr"></span></li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-        // Close all other open items
-        document.querySelectorAll('.job-card').forEach(card => {
-            card.classList.remove('active');
-            card.querySelector('.job-content').style.maxHeight = null;
-            // Reset icon rotation
-            card.querySelector('.toggle-icon i').style.transform = 'rotate(0deg)';
-        });
+<section>
+  <h2><span>04</span>Education</h2>
+  <ul class="rows">
+    <li><span>MBA, Operations &amp; Supply Chain<small>Jamia Hamdard University, New Delhi</small></span><span class="yr">In progress</span></li>
+    <li><span>MA, English Language &amp; Literature<small>Annamalai University</small></span><span class="yr">2024</span></li>
+    <li><span>MA, Arabic Language &amp; Literature<small>English &amp; Foreign Languages University</small></span><span class="yr">2019</span></li>
+    <li><span>BA, English Language &amp; Literature<small>University of Calicut</small></span><span class="yr">2016</span></li>
+    <li><span>Diplomas in Functional Arabic and Urdu<small>Ministry of HRD, Govt. of India</small></span><span class="yr">2012, 2016</span></li>
+  </ul>
+</section>
 
-        // Open the clicked item
-        if (!isActive) {
-            element.classList.add('active');
-            content.style.maxHeight = content.scrollHeight + "px";
-            element.querySelector('.toggle-icon i').style.transform = 'rotate(180deg)';
-        }
-    }
-</script>
+<section class="skills">
+  <h2><span>05</span>Skills</h2>
+  <dl>
+    <dt>Operations</dt><dd>Track and trace, disruption management, stakeholder communication, business reporting, root-cause analysis, Lean (DMAIC, VSM, FMEA)</dd>
+    <dt>Tools</dt><dd>SQL, Excel VBA, BI dashboards, browser extensions, AI-assisted automation, Visio</dd>
+    <dt>Languages</dt><dd>English, Arabic, Urdu, Malayalam</dd>
+  </dl>
+</section>
 
+<footer><span>Jafar Sadique KK</span><span>Updated October 2026</span></footer>
+
+</main>
 </body>
 </html>
